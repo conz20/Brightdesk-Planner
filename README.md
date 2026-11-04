@@ -5,7 +5,9 @@
 
 <p align="center"><strong>Plan projects, organise tasks and track progress.</strong></p>
 
-<p align="center"><img src="assets/previews/planner.svg" width="100%" alt="Brightdesk Planner workspace design preview"></p>
+<p align="center"><a href="https://raw.githubusercontent.com/connormolloy12/Brightdesk-Planner/main/assets/previews/planner.svg"><img src="assets/previews/planner.svg" width="100%" alt="Brightdesk Planner workspace design preview"></a></p>
+
+<p align="center"><sub>Select the preview to open the full-size artwork.</sub></p>
 
 > **Visual example:** This is the proposed Brightdesk Planner experience. It is a design concept, not a screenshot of a finished application.
 
