@@ -1,7 +1,7 @@
 # Brightdesk Planner
 
 <p align="center"><img src="assets/branding/mark.svg" width="82" height="82" alt="Brightdesk brand mark"><br><strong>brightdesk</strong></p>
-<p align="center"><img src="assets/branding/icons/planner.svg" width="112" height="112" alt="Brightdesk Planner application icon"></p>
+<p align="center"><img src="assets/branding/icons/planner.svg" width="112" height="112" alt="Brightdesk Planner product icon"></p>
 
 <p align="center"><strong>Plan projects, organise tasks and track progress.</strong></p>
 
@@ -9,25 +9,25 @@
 
 <p align="center"><sub>Select the preview to open the full-size artwork.</sub></p>
 
-> **Visual example:** This is the proposed Brightdesk Planner experience. It is a design concept, not a screenshot of a finished application.
+> **Concept preview:** This is original design artwork for Brightdesk Planner, not a screenshot captured from a running desktop build.
 
-## Standalone implementation
+## Desktop implementation
 
-This repository contains the runnable standalone desktop application source for Brightdesk Planner. The actual workspace is rendered by the app code, and the professional design layer is loaded at runtime from `src/design-system.css`. The preview artwork above remains a design concept, not a captured screenshot.
+This repository contains the desktop source for Brightdesk Planner. Electron hosts the desktop interface, the product module is maintained in `src/planner-workspace.js`, and the professional visual system is loaded from `src/design-system.css`. The preview above is concept artwork rather than a captured product screenshot.
 
-- [Desktop application shell](src/index.html)
-- [Product module](src/planner-workspace.js)
-- [Professional design system](src/design-system.css)
-- [UI integration tests](tests/planner-ui-integration.test.js)
+- [Desktop interface](src/index.html)
+- [Brightdesk Planner feature module](src/planner-workspace.js)
+- [Brightdesk visual system](src/design-system.css)
+- [Interface integration tests](tests/planner-ui-integration.test.js)
 - [Shared Brightdesk Suite](https://github.com/connormolloy12/Brightdesk-suite)
 
 ## Shared Brightdesk design standard
 
-The planned product follows the [Brightdesk visual and interaction standard](https://github.com/connormolloy12/Brightdesk-suite/blob/main/docs/BRIGHTDESK_VISUAL_STANDARD.md) for branding, icon usage, layout, responsive behaviour and accessibility.
+The product follows the [Brightdesk visual and interaction standard](https://github.com/connormolloy12/Brightdesk-suite/blob/main/docs/BRIGHTDESK_VISUAL_STANDARD.md) for branding, icon usage, layout, responsive behaviour and accessibility.
 
 ## Product experience
 
-Brightdesk Planner is planned as a local-first project planning workspace with boards, timelines, tasks, priorities and progress tracking.
+Brightdesk Planner is designed as a local-first project planning workspace with boards, timelines, tasks, priorities and progress tracking.
 
 ## Planned capabilities
 
@@ -39,11 +39,11 @@ Brightdesk Planner is planned as a local-first project planning workspace with b
 
 ## Implementation status
 
-**Standalone source committed to main.** This repository now includes an Electron app shell, the app modules, the shared visual design layer, Rust engine integration, build scripts and automated UI tests. The preview artwork remains concept art rather than a screenshot of the running application.
+**Desktop source is committed to `main`.** This repository includes an Electron desktop shell, product modules, the shared visual system, Rust engine integration, build scripts and automated interface tests. The concept preview is not a screenshot from a running build. A platform desktop installer should only be described as ready after its build and verification checks pass.
 
 ## Design brief
 
-See [docs/DESIGN_BRIEF.md](docs/DESIGN_BRIEF.md) for the planned screens, navigation and acceptance targets.
+See [docs/DESIGN_BRIEF.md](docs/DESIGN_BRIEF.md) for the screen designs, navigation and acceptance targets.
 
 ## Related project
 
