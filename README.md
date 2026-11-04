@@ -36,3 +36,26 @@ See [docs/DESIGN_BRIEF.md](docs/DESIGN_BRIEF.md) for the planned screens, naviga
 ## Related project
 
 [Brightdesk Office Suite](https://github.com/connormolloy12/Brightdesk-suite)
+
+## Professional workspace examples and acceptance
+
+Planner should provide a clear overview of work, ownership, timing and progress. The main example should show a realistic project board with task cards, owners, due dates and progress—not a decorative collection of empty columns.
+
+### Example workflow
+
+1. Create a project plan with a few work stages.
+2. Add tasks with owners, priorities and due dates.
+3. Move a task between stages and update its progress.
+4. Switch between board and timeline views where implemented.
+5. Filter the plan to focus on overdue or high-priority work.
+
+Make status and priority understandable without relying on colour alone. Keep task cards consistent, dates readable and the relationship between board and timeline views clear. Do not present unimplemented collaboration, notifications or cloud sync as available.
+
+Follow the shared [Brightdesk visual and interaction standard](https://github.com/connormolloy12/Brightdesk-suite/blob/main/docs/BRIGHTDESK_VISUAL_STANDARD.md).
+
+### Acceptance checks
+
+- Task creation, status changes, ownership and due dates are represented accurately.
+- Board and timeline views remain consistent when switching, if both are shipped.
+- Keyboard access, focus, contrast and non-colour status cues are checked.
+- Scaffold status is not confused with a runnable application.
