@@ -9,7 +9,7 @@
 
 <p align="center"><sub>Select the preview to open the full-size artwork.</sub></p>
 
-> **Concept preview:** This is original design artwork for Brightdesk Planner, not a screenshot captured from a running desktop build.
+> **Concept artwork — not a screenshot.** The preview above is original Brightdesk design artwork, not a capture from the running desktop build. A genuine screenshot will be added only after the current product window has been launched and its primary workflow checked.
 
 ## Desktop implementation
 
@@ -25,17 +25,16 @@ This repository contains the desktop source for Brightdesk Planner. Electron hos
 
 The product follows the [Brightdesk visual and interaction standard](https://github.com/connormolloy12/Brightdesk-suite/blob/main/docs/BRIGHTDESK_VISUAL_STANDARD.md) for branding, icon usage, layout, responsive behaviour and accessibility.
 
-## Product experience
+## Current first-use workflows
 
-Brightdesk Planner is designed as a local-first project planning workspace with boards, timelines, tasks, priorities and progress tracking.
+- Create and rename plans.
+- Create, rename and delete buckets; retain tasks when a bucket is removed by moving them to a remaining bucket.
+- Create, edit, move, filter and delete tasks.
+- Track task descriptions, priority, progress, due date, assignee text and labels.
+- Search and filter tasks by progress, priority and other supported task fields.
+- Save plans locally on this device.
 
-## Planned capabilities
-
-- Create plans, buckets and task cards.
-- Track due dates, priorities and progress.
-- Switch between board and timeline views.
-- Search and filter plans.
-- Keep project data on this device.
+**Not included in this first version:** Connected user directories, automatic assignment, operating-system notifications, recurring reminders, cloud sync and shared plans.
 
 ## Implementation status
 
