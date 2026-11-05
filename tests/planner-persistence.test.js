@@ -49,7 +49,8 @@ test('Planner explains when the local save operation fails', () => {
   };
   const window = {
     BrightdeskPlannerService: {
-      createPlan() { return plan; }
+      createPlan() { return plan; },
+      filterTasks() { return []; }
     }
   };
   const localStorage = {
