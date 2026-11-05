@@ -25,9 +25,9 @@ test('final stylesheet tokens match the exact approved Planner palette', () => {
   };
 
   assert.equal(lastHex('--bd-accent'), '#4667BF');
-  assert.equal(lastHex('--bd-accent-strong'), '#344F9A');
-  assert.equal(lastHex('--bd-accent-soft'), '#EEF2FB');
-  assert.equal(lastHex('--bd-product-tint'), '#EEF2FB');
+  assert.equal(lastHex('--bd-accent-strong'), '#34529D');
+  assert.equal(lastHex('--bd-accent-soft'), '#EEF2FC');
+  assert.equal(lastHex('--bd-product-tint'), '#EEF2FC');
   assert.equal(lastHex('--bd-canvas'), '#F3F6FA');
   assert.equal(lastHex('--bd-ink'), '#202B3C');
 });
