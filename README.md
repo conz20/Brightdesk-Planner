@@ -80,6 +80,6 @@ The root README is maintained alongside the product, not as an end-of-project ta
 
 ## Individual product window
 
-When opened by itself, Brightdesk Planner opens directly into its planning workspace. The Suite's product-management sidebar and generic welcome banner are removed from this window. Project navigation and planning views stay with the Planner workspace, while task buckets and status columns run left to right so work can be scanned across the board.
+When opened by itself, Brightdesk Planner opens directly into its planning workspace. The Suite's generic product-management view and welcome banner are removed from this window; the product's own left navigation remains available, with an optional compact icon rail and accessible labels. Project navigation and planning views stay with the Planner workspace, while task buckets and status columns run left to right so work can be scanned across the board.
 
 The interface preview is design artwork showing the intended planning-board orientation; it is not a screenshot from a verified running build.
