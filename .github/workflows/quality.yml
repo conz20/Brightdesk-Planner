@@ -35,6 +35,9 @@ jobs:
           toolchain: 1.99.1
           components: rustfmt, clippy
 
+      - name: Add Cargo tools to PATH
+        run: echo "$CARGO_HOME/bin" >> "$GITHUB_PATH"
+
       - name: Cache Rust build
         uses: Swatinem/rust-cache@v2
         with:
