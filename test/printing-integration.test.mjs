@@ -17,7 +17,7 @@ test("Planner exposes Print actions through protected IPC and preload",()=>{
  assert.ok(app.includes("window.brightdesk.printing.openPrinterSettings()"));
  assert.match(main,/registerPrintingIpcHandlers/);assert.match(preload,/printing:list-printers/);
 });
-test("built-in languages contain printing labels",()=>{for(const locale of ["en-AU","de-DE","es-ES","fr-FR"]){const p=JSON.parse(read(\`src/languages/\${locale}.json\`));assert.ok(p.translations["top.print"]);assert.ok(p.translations["top.printerSettings"]);}});
+test("built-in languages contain printing labels",()=>{for(const locale of ["en-AU","de-DE","es-ES","fr-FR"]){const p=JSON.parse(read("src/languages/"+locale+".json"));assert.ok(p.translations["top.print"]);assert.ok(p.translations["top.printerSettings"]);}});
 test("native Mac and Windows helper sources are included and selected by platform",()=>{
  const native=read("scripts/build-native.js"),builder=read("scripts/build-printing-native.js"),mac=read("src/printing-package/tools/build-macos-printer-discovery.sh");
  for(const f of ["src/printing-package/native/macos/ipp-printer-discovery.swift","src/printing-package/native/windows/ipp-printer-discovery.cpp","src/printing-package/tools/build-macos-printer-discovery.sh","src/printing-package/tools/build-windows-printer-discovery.ps1"])assert.ok(fs.statSync(path.join(process.cwd(),f)).isFile(),f);
