@@ -1,0 +1,9 @@
+# Brightdesk Planner printing integration
+
+Planner uses the canonical dependency-free Brightdesk Printing adapter snapshot. The Electron main process owns a sender-authorized IPC bridge for queue listing, network discovery, user-selected WSD pairing, capabilities, native settings and print submission. Renderer access is limited to the context-isolated preload API.
+
+The renderer exposes a customer-facing **Find network printers** panel and a configured-printer list. Opening the panel does not begin a search; the user explicitly chooses **Search local network**. Results use safe display names and protocol labels. On Windows, eligible WSD results offer a separate user-approved **Pair** action; other discovered devices direct the user to operating-system printer settings. A discovered device is not yet a usable print queue. Brightdesk refreshes the operating-system queue list and only submits print jobs to queues the operating system exposes. The configured-printer panel can show normalized colour, duplex, paper-size, resolution and copy capabilities; unknown values remain unknown. The visible operating-system print dialog remains responsible for final printer choice and options. Successful submission means the operating system accepted the job; it does not prove that a physical page was printed.
+
+The native build script runs after the Rust Node-API build. macOS builds a universal Bonjour/IPP helper; Windows builds the IPP/WSD helper using Visual Studio C++ Build Tools and Windows SDK; Linux uses the host CUPS `ippfind` utility. Installer configuration unpacks the native helpers and Rust module outside ASAR.
+
+Print submission uses the visible OS print dialog. Discovery does not create queues or install drivers. Submission acceptance does not confirm a physical page was printed. Virtual-printer tests are not hardware verification.
